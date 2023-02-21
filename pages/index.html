@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>English Word Game</title>
+</head>
+<body>
+    
+    <div id="game-area">
+        <form>
+            <div class="start-btn"><button id="start" >Yeniden Oyna</button></div>
+        </form>
+       
+        <div id="box" class="box">
+            <div class="card">
+                <form >
+                    
+                    <h1 id="title" class="text-center">
+                        <!-- word will be here -->
+                    </h1>
+                    <div style="width: 100%; text-align: center; margin-top: 40px;">
+                        <input type="text" class="text-center" name="word" id="word" placeholder="Tahmininizi giriniz">
+                    </div>
+                    <div style="width: 100%; text-align: center; margin-top: 30px;">
+                        <button id="submit" class="control-btn">Kontrol et</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="result">
+            <div class="text-center">
+                <h3 style="margin-bottom: 10px;">Sonuçların</h3>
+                <hr>
+            </div>
+            <div class="row">
+                <!-- right answer -->
+                <div id="right-answer" class="col-6 ">
+                    <!-- right answer will be here -->
+                </div>
+                <!-- wrong ansver -->
+                <div id="wrong-answer" class="col-6 ">
+                    <!-- wrong answer will be here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="../js/index.js"></script>
+</body>
+</html>

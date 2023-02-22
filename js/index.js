@@ -60,10 +60,10 @@ const game = (index) => {
         console.log('game finished')
        
     } else {
-        if(data[index].turkish === answer.toLowerCase()) {
+        if(data[index].meaning.includes(answer.toLowerCase())) {
             rightAnswer.innerHTML += ` <div><span class="right-answer-span">${data[index].word}</span> = <span class="answer">${answer}</span></div>`
         } else {
-            wrongAnswer.innerHTML += `<div><span class="wrong-answer-span">${data[index].word}</span> = <span class="answer">${answer} / <span class="right">(${data[index].turkish})</span></span></div>`
+            wrongAnswer.innerHTML += `<div><span class="wrong-answer-span">${data[index].word}</span> = <span class="answer">${answer} / <span class="right">(${data[index].meaning.slice(",")})</span></span></div>`
         }
     }
 }

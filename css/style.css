@@ -4,16 +4,30 @@
     margin: 0;
 }
 
+.description {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#title {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 50px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
 .box {
     position: relative;
-    height: 60vh;
+    height: 80vh;
     transform: translateX(-50%);
 }
 
 .card {
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 20%;
     left: 50%;
     margin: auto;
 }
@@ -26,6 +40,9 @@ input {
     padding: 10px 40px;
     font-size: large;
     border: 1px solid rgb(164, 162, 162);
+    background-color: rgb(234, 204, 204);
+    box-shadow: 0px 7px 20px -7px rgba(0,0,0,1);
+    border-radius: 5px;
 }
 
 input:focus {
@@ -76,6 +93,26 @@ input:focus {
     border-radius: 20px;
 }
 
+.right {
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(3, 203, 0);
+}
+
+.wrong {
+    font-size: 20px;
+    margin: 10px;
+    color: red;
+}
+
+
+.right-wrong-piece {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* width: 30%; */
+} 
+
 /* result part css */
 .row {
     width: 100%;
@@ -90,14 +127,10 @@ input:focus {
 }
 
 .right-answer-span {
-    color: rgb(11, 198, 18);
+    color: rgb(23, 154, 49);
 }
 
 .wrong-answer-span {
     color: red;
 }
 
-.right {
-    font-style: italic;
-    text-transform: capitalize;
-}

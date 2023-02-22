@@ -6,9 +6,14 @@ const wrongAnswer = document.querySelector('#wrong-answer')
 const word = document.querySelector('#title')
 const start = document.querySelector('#start')
 const box = document.querySelector('#box')
+const rightCounterSpan = document.querySelector('.right')
+const wrongCounterSpan = document.querySelector('.wrong')
+let rigthAnswerCounter = 0
+let wronghAnswerCounter = 0
 let createdIndex = []
 let index = true
-
+rightCounterSpan.innerHTML = 0;
+wrongCounterSpan.innerHTML = 0;
 start.addEventListener('onclick', () => {
     location.reload()
 })
@@ -61,9 +66,13 @@ const game = (index) => {
        
     } else {
         if(data[index].meaning.includes(answer.toLowerCase())) {
+            rigthAnswerCounter ++
             rightAnswer.innerHTML += ` <div><span class="right-answer-span">${data[index].word}</span> = <span class="answer">${answer}</span></div>`
+            rightCounterSpan.innerHTML = `${rigthAnswerCounter}`
         } else {
-            wrongAnswer.innerHTML += `<div><span class="wrong-answer-span">${data[index].word}</span> = <span class="answer">${answer} / <span class="right">(${data[index].meaning.slice(",")})</span></span></div>`
+            wronghAnswerCounter++
+            wrongAnswer.innerHTML += `<div><span class="wrong-answer-span">${data[index].word}</span> = <span class="answer">${answer} / <span>(${data[index].meaning.slice(",")})</span></span></div>`
+            wrongCounterSpan.innerHTML = `${wronghAnswerCounter}`
         }
     }
 }

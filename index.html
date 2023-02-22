@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
     <title>English Word Game</title>
 </head>
 <body>
@@ -16,6 +17,8 @@
        
         <div id="box" class="box">
             <div class="card">
+                <h1 class="description">İngilizce kelime oyunu</h1>
+                <p class="description" style="margin-bottom: 35px;">Not: Sayfa yenilendiğinde verileriniz kayıt olmayacaktır</p>
                 <form>
                     <h1 id="title" class="text-center">
                         <!-- word will be here -->
@@ -27,13 +30,17 @@
                         <button id="submit" class="control-btn">Kontrol et</button>
                     </div>
                 </form>
+                <div class="right-wrong-piece text-center">
+                    <span class="right"></span>
+                    <span class="wrong"></span>
+                </div>
             </div>
         </div>
     
         <div class="result">
             <div class="text-center">
-                <h3 style="margin-bottom: 10px;">Sonuçların</h3>
-                <hr>
+                <h3 style="margin-bottom: 10px; font-family: 'Roboto', sans-serif;">Sonuçların</h3>
+                <!-- <hr> -->
             </div>
             <div class="row">
                 <!-- right answer -->

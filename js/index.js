@@ -12,6 +12,7 @@ let rigthAnswerCounter = 0
 let wronghAnswerCounter = 0
 let createdIndex = []
 let index = true
+
 rightCounterSpan.innerHTML = 0;
 wrongCounterSpan.innerHTML = 0;
 start.addEventListener('onclick', () => {

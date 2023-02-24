@@ -4,6 +4,12 @@
     margin: 0;
 }
 
+body {
+    background: rgb(142,218,223);
+    background: linear-gradient(0deg, rgba(142,218,223,0.4835434173669467) 0%, rgba(84,187,184,0.7496498599439776) 44%, rgba(178,218,235,1) 100%, rgba(235,67,144,1) 100%);
+    height: 100%;
+}
+
 .description {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -141,3 +147,28 @@ footer {
     background-color: rgb(241, 240, 240);
 }
 
+
+/* css styles for start.html */
+.play-btn {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    border: 1px solid rgb(24, 178, 205);
+    background-color: rgb(24, 178, 205);
+    color: white;
+    animation-duration: 2s;
+}
+
+.play-btn:hover {
+    background-color: rgb(19, 143, 165);
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Shantell Sans', cursive;
+}

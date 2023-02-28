@@ -1,0 +1,72 @@
+@media(max-width: 1200px) {
+
+}
+
+@media(max-width: 992px) {
+    .description {
+        font-size:25px ;
+    }
+
+    .bottom-description {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 30px;
+    }
+
+    .logo-image {
+        width: 210px; 
+        margin-top: 20px;
+    }
+
+    .play-btn {
+        margin-top: 70px;
+        background-color: red;
+        border-radius: 12px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .card {
+        top: 30%;
+    }
+}
+
+@media(max-width:768px) {
+    .right-answer-span , .wrong-answer-span, .answer {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:576px) {
+
+    .title {
+        font-size: 25px;
+    }
+
+    .logo-image {
+        width: 110px; 
+        margin-top: 20px;
+    }
+
+    .play-btn {
+        margin-top: 70px;
+        background-color: red;
+        border-radius: 12px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .row {
+        padding: 10px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+/* xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px */

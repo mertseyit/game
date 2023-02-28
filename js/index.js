@@ -15,9 +15,12 @@ let index = true
 
 rightCounterSpan.innerHTML = 0;
 wrongCounterSpan.innerHTML = 0;
-start.addEventListener('onclick', () => {
+start.addEventListener('onclick', async () => {
     location.reload()
+    
 })
+
+
 
 const generateRandomNumber = () => {
     const index = Math.floor(Math.random() * data.length) 
@@ -43,8 +46,10 @@ const generateRandomNumber = () => {
 index = generateRandomNumber()
 word.innerHTML = `${data[index].word}`
 
-button.addEventListener('click', (e) => {
+button.addEventListener('click', async (e) => {
+    
     e.preventDefault()
+    
     game(index)
     index = generateRandomNumber()
     if(index !== -1) {

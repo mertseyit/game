@@ -10,7 +10,7 @@ body {
     height: 100%;
 }
 
-.description {
+.description, .bottom-description {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -28,6 +28,11 @@ span {
     position: relative;
     height: 80vh;
     transform: translateX(-50%);
+}
+
+.logo-image {
+    width: 240px; 
+    margin-top: 20px;
 }
 
 .card {
